@@ -1,0 +1,6 @@
+D:\Development\dotNet\CbrCicrcle\CbrCicrcle\obj\Debug\netcoreapp3.1\CbrCircle.csprojAssemblyReference.cache
+D:\Development\dotNet\CbrCicrcle\CbrCicrcle\obj\Debug\netcoreapp3.1\CbrCircle.AssemblyInfoInputs.cache
+D:\Development\dotNet\CbrCicrcle\CbrCicrcle\obj\Debug\netcoreapp3.1\CbrCircle.AssemblyInfo.cs
+D:\Development\dotNet\CbrCicrcle\CbrCicrcle\obj\Debug\netcoreapp3.1\CbrCircle.csproj.CoreCompileInputs.cache
+D:\Development\dotNet\CbrCicrcle\CbrCicrcle\obj\Debug\netcoreapp3.1\CbrCircle.MvcApplicationPartsAssemblyInfo.cs
+D:\Development\dotNet\CbrCicrcle\CbrCicrcle\obj\Debug\netcoreapp3.1\CbrCircle.MvcApplicationPartsAssemblyInfo.cache

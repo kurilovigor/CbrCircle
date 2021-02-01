@@ -1,0 +1,227 @@
+2021-02-01 20:17:28.975 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-01 20:17:28.991 +03:00 [INF] Hosting environment: Development
+2021-02-01 20:17:28.992 +03:00 [INF] Content root path: D:\Development\dotNet\CbrCicrcle\CbrCicrcle
+2021-02-01 20:17:28.998 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2021-02-01 20:17:29.126 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 131.1028ms
+2021-02-01 20:17:29.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2021-02-01 20:17:29.361 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 92.6935ms
+2021-02-01 20:17:39.200 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-2 - -
+2021-02-01 20:17:39.228 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:17:39.301 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:17:39.309 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 3.7555ms
+2021-02-01 20:17:39.310 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:17:39.315 +03:00 [ERR] HTTP GET /api/Rate/x/1/y/-2 responded 500 in 85.8536 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Caching.Memory.IMemoryCache' while attempting to activate 'CbrCircle.Controllers.RateController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-02-01 20:17:39.355 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Caching.Memory.IMemoryCache' while attempting to activate 'CbrCircle.Controllers.RateController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-01 20:17:39.370 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-2 - - - 500 - text/plain 169.9331ms
+2021-02-01 20:18:37.197 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-01 20:18:37.210 +03:00 [INF] Hosting environment: Development
+2021-02-01 20:18:37.211 +03:00 [INF] Content root path: D:\Development\dotNet\CbrCicrcle\CbrCicrcle
+2021-02-01 20:18:37.219 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2021-02-01 20:18:37.344 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 127.7338ms
+2021-02-01 20:18:37.489 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2021-02-01 20:18:37.564 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 75.2885ms
+2021-02-01 20:18:44.238 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-2 - -
+2021-02-01 20:18:44.266 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:18:44.305 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:18:44.313 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 3.4553ms
+2021-02-01 20:18:44.315 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:18:44.317 +03:00 [ERR] HTTP GET /api/Rate/x/1/y/-2 responded 500 in 52.5681 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Caching.Memory.IMemoryCache' while attempting to activate 'CbrCircle.Controllers.RateController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-02-01 20:18:44.353 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Caching.Memory.IMemoryCache' while attempting to activate 'CbrCircle.Controllers.RateController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-01 20:18:44.372 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-2 - - - 500 - text/plain 133.1708ms
+2021-02-01 20:23:06.306 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-01 20:23:06.323 +03:00 [INF] Hosting environment: Development
+2021-02-01 20:23:06.324 +03:00 [INF] Content root path: D:\Development\dotNet\CbrCicrcle\CbrCicrcle
+2021-02-01 20:23:06.332 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2021-02-01 20:23:06.457 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 127.9473ms
+2021-02-01 20:23:06.600 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2021-02-01 20:23:06.671 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 71.0403ms
+2021-02-01 20:23:14.727 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-2 - -
+2021-02-01 20:23:14.758 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:14.794 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:23:16.221 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:23:16.241 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 1441.9997ms
+2021-02-01 20:23:16.243 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:16.244 +03:00 [INF] HTTP GET /api/Rate/x/1/y/-2 responded 200 in 1487.8870 ms
+2021-02-01 20:23:16.246 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-2 - - - 200 - application/json;+charset=utf-8 1519.6987ms
+2021-02-01 20:23:20.153 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-2 - -
+2021-02-01 20:23:20.154 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:20.154 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:23:20.160 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:23:20.164 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 9.6291ms
+2021-02-01 20:23:20.164 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:20.164 +03:00 [INF] HTTP GET /api/Rate/x/1/y/-2 responded 200 in 10.3471 ms
+2021-02-01 20:23:20.165 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-2 - - - 200 - application/json;+charset=utf-8 11.5228ms
+2021-02-01 20:23:31.672 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-3 - -
+2021-02-01 20:23:31.675 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:31.675 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:23:31.676 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:23:31.677 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 2.0183ms
+2021-02-01 20:23:31.677 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:31.677 +03:00 [INF] HTTP GET /api/Rate/x/1/y/-3 responded 200 in 2.4474 ms
+2021-02-01 20:23:31.678 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-3 - - - 200 - application/json;+charset=utf-8 6.7554ms
+2021-02-01 20:23:36.198 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/2 - -
+2021-02-01 20:23:36.198 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:36.198 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:23:36.426 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:23:36.427 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 228.4875ms
+2021-02-01 20:23:36.427 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:36.427 +03:00 [INF] HTTP GET /api/Rate/x/1/y/2 responded 200 in 228.8768 ms
+2021-02-01 20:23:36.427 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/2 - - - 200 - application/json;+charset=utf-8 229.3636ms
+2021-02-01 20:23:40.682 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-1 - -
+2021-02-01 20:23:40.682 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:40.682 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:23:40.682 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:23:40.683 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 0.8897ms
+2021-02-01 20:23:40.683 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:40.683 +03:00 [INF] HTTP GET /api/Rate/x/1/y/-1 responded 200 in 1.1724 ms
+2021-02-01 20:23:40.684 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-1 - - - 200 - application/json;+charset=utf-8 1.9809ms
+2021-02-01 20:23:43.551 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/0 - -
+2021-02-01 20:23:43.551 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:43.551 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:23:43.552 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2021-02-01 20:23:43.552 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 1.0463ms
+2021-02-01 20:23:43.553 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:43.553 +03:00 [INF] HTTP GET /api/Rate/x/1/y/0 responded 400 in 1.3112 ms
+2021-02-01 20:23:43.553 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/0 - - - 400 - text/plain;+charset=utf-8 2.4473ms
+2021-02-01 20:23:54.024 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/1 - -
+2021-02-01 20:23:54.024 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:54.024 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:23:54.024 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:23:54.025 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 0.9283ms
+2021-02-01 20:23:54.025 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:23:54.025 +03:00 [INF] HTTP GET /api/Rate/x/1/y/1 responded 200 in 1.2071 ms
+2021-02-01 20:23:54.026 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/1 - - - 200 - application/json;+charset=utf-8 2.0930ms
+2021-02-01 20:26:40.568 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-01 20:26:40.580 +03:00 [INF] Hosting environment: Development
+2021-02-01 20:26:40.581 +03:00 [INF] Content root path: D:\Development\dotNet\CbrCicrcle\CbrCircle
+2021-02-01 20:26:40.588 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2021-02-01 20:26:40.723 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 137.0954ms
+2021-02-01 20:26:40.941 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2021-02-01 20:26:41.104 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 162.9887ms
+2021-02-01 20:26:48.920 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-2 - -
+2021-02-01 20:26:48.950 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:26:48.981 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:26:50.322 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:26:50.339 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 1352.8179ms
+2021-02-01 20:26:50.341 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:26:50.343 +03:00 [INF] HTTP GET /api/Rate/x/1/y/-2 responded 200 in 1394.9574 ms
+2021-02-01 20:26:50.345 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-2 - - - 200 - application/json;+charset=utf-8 1425.2186ms
+2021-02-01 20:26:55.033 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/-2/y/-2 - -
+2021-02-01 20:26:55.034 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:26:55.034 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:26:55.243 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:26:55.244 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 209.8679ms
+2021-02-01 20:26:55.244 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:26:55.244 +03:00 [INF] HTTP GET /api/Rate/x/-2/y/-2 responded 200 in 210.4223 ms
+2021-02-01 20:26:55.245 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/-2/y/-2 - - - 200 - application/json;+charset=utf-8 215.0646ms
+2021-02-01 20:27:10.776 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/-2/y/1 - -
+2021-02-01 20:27:10.776 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:27:10.776 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:27:10.968 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:27:10.969 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 192.8215ms
+2021-02-01 20:27:10.969 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:27:10.969 +03:00 [INF] HTTP GET /api/Rate/x/-2/y/1 responded 200 in 193.1470 ms
+2021-02-01 20:27:10.969 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/-2/y/1 - - - 200 - application/json;+charset=utf-8 193.5796ms
+2021-02-01 20:28:14.159 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/1 - -
+2021-02-01 20:28:14.159 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:28:14.159 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:28:14.609 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:28:14.609 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 222.8156ms
+2021-02-01 20:28:14.609 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:28:14.609 +03:00 [INF] HTTP GET /api/Rate/x/1/y/1 responded 200 in 450.1065 ms
+2021-02-01 20:28:14.609 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/1 - - - 200 - application/json;+charset=utf-8 450.5364ms
+2021-02-01 20:30:12.138 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-01 20:30:12.154 +03:00 [INF] Hosting environment: Development
+2021-02-01 20:30:12.156 +03:00 [INF] Content root path: D:\Development\dotNet\CbrCicrcle\CbrCircle
+2021-02-01 20:30:12.165 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2021-02-01 20:30:12.291 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 129.9791ms
+2021-02-01 20:30:12.450 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2021-02-01 20:30:12.527 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.3246ms
+2021-02-01 20:30:18.376 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/2 - -
+2021-02-01 20:30:18.403 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:30:18.435 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:30:19.832 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:30:19.847 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 1407.7958ms
+2021-02-01 20:30:19.849 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:30:19.850 +03:00 [INF] HTTP GET /api/Rate/x/1/y/2 responded 200 in 1449.1286 ms
+2021-02-01 20:30:19.852 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/2 - - - 200 - application/json;+charset=utf-8 1476.2129ms
+2021-02-01 20:30:32.313 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-1 - -
+2021-02-01 20:30:32.314 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:30:32.314 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:30:32.512 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:30:32.513 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 199.1924ms
+2021-02-01 20:30:32.513 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:30:32.513 +03:00 [INF] HTTP GET /api/Rate/x/1/y/-1 responded 200 in 199.7015 ms
+2021-02-01 20:30:32.514 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/-1 - - - 200 - application/json;+charset=utf-8 200.4616ms
+2021-02-01 20:31:34.624 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/1 - -
+2021-02-01 20:31:34.624 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:31:34.624 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:31:34.627 +03:00 [INF] Executing ObjectResult, writing value of type 'CbrCircle.Model.RateResponse'.
+2021-02-01 20:31:34.631 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 6.7839ms
+2021-02-01 20:31:34.631 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:31:34.632 +03:00 [INF] HTTP GET /api/Rate/x/1/y/1 responded 200 in 7.5898 ms
+2021-02-01 20:31:34.633 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/1 - - - 200 - application/json;+charset=utf-8 8.8846ms
+2021-02-01 20:35:24.198 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/10 - -
+2021-02-01 20:35:24.198 +03:00 [INF] Executing endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:35:24.199 +03:00 [INF] Route matched with {action = "Get", controller = "Rate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CbrCircle.Model.RateResponse]] Get(Double, Double) on controller CbrCircle.Controllers.RateController (CbrCircle).
+2021-02-01 20:35:24.203 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2021-02-01 20:35:24.204 +03:00 [INF] Executed action CbrCircle.Controllers.RateController.Get (CbrCircle) in 1.2379ms
+2021-02-01 20:35:24.204 +03:00 [INF] Executed endpoint 'CbrCircle.Controllers.RateController.Get (CbrCircle)'
+2021-02-01 20:35:24.204 +03:00 [INF] HTTP GET /api/Rate/x/1/y/10 responded 400 in 6.1713 ms
+2021-02-01 20:35:24.208 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/api/Rate/x/1/y/10 - - - 400 - text/plain;+charset=utf-8 10.1565ms
