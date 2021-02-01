@@ -27,7 +27,7 @@ namespace CbrCircle
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .UseSerilog() // âêëþ÷àåì ëîãèèðîâàíèå Serilog
+                .UseSerilog() // включаем Serilog
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
