@@ -15,10 +15,10 @@ namespace CbrCircle
     {
         public static void Main(string[] args)
         {
-            // Èíèöèàëèçèðóåì Serilog äëÿ çàïèñè â ôàéë
+            // Ð˜Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð¸Ñ€ÑƒÐµÐ¼ Serilog Ð´Ð»Ñ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð² Ñ„Ð°Ð¹Ð»
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
-                .MinimumLevel.Override("Microsoft", LogEventLevel.Information  /* TODO: ïîìåíÿòü íà LogEventLevel.Warning */)
+                .MinimumLevel.Override("Microsoft", LogEventLevel.Information  /* TODO: Ð¿Ð¾Ð¼ÐµÐ½ÑÑ‚ÑŒ Ð½Ð° LogEventLevel.Warning */)
                 .Enrich.FromLogContext()
                 .WriteTo.File("log.txt")
                 .CreateLogger();
@@ -27,7 +27,7 @@ namespace CbrCircle
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .UseSerilog() // âêëþ÷àåì ëîãèèðîâàíèå Serilog
+                .UseSerilog() // Ã¢ÃªÃ«Ã¾Ã·Ã Ã¥Ã¬ Ã«Ã®Ã£Ã¨Ã¨Ã°Ã®Ã¢Ã Ã­Ã¨Ã¥ Serilog
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
